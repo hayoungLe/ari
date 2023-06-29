@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아리따움</title>
+  <link rel="stylesheet" href="style.css">
+  <!--font link-->
+  <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+  <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+
+  <script src="command.js" defer></script>
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <section class="side-bar">
+    <div class="side-bar-con">
+      <div>
+        <a href="#">
+          <img src="side-heart.svg" alt="like">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="side-watch.svg" alt="recently">
+        </a>
+      </div>
+      <div class="top-btn" style="cursor:pointer;" onclick="window.scrollTo(0,0);">
+        <img src="side-top.svg" alt="top">
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <nav>
+      <div class="nav-con">
+        <ul class="nav-left">
+          <li class="menu-icon">
+            <img src="menu-icon.svg" alt="메뉴">
+
+            <ul class="menu-2nd">
+
+              <li>
+                <a href="#">
+                  <span>스킨케어</span>
+                </a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>스킨ㆍ토너</span></a></li>
+                    <li><a href="#"><span>로션ㆍ에멀젼</span></a></li>
+                    <li><a href="#"><span>에센스ㆍ세럼</span></a></li>
+                    <li><a href="#"><span>크림</span></a></li>
+                    <li><a href="#"><span>페이스 오일</span></a></li>
+                    <li><a href="#"><span>아이ㆍ넥</span></a></li>
+                    <li><a href="#"><span>세트</span></a></li>
+                    <li><a href="#"><span>기초소품</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>메이크업</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>페이스</span></a></li>
+                    <li><a href="#"><span>립</span></a></li>
+                    <li><a href="#"><span>아이</span></a></li>
+                    <li><a href="#"><span>치크</span></a></li>
+                    <li><a href="#"><span>네일</span></a></li>
+                    <li><a href="#"><span>헤어</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>선블럭</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>선크림</span></a></li>
+                    <li><a href="#"><span>선스틱</span></a></li>
+                    <li><a href="#"><span>선 팩트</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>클렌징</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>클렌징 폼ㆍ젤</span></a></li>
+                    <li><a href="#"><span>클렌징 오일ㆍ워터</span></a></li>
+                    <li><a href="#"><span>클렌징 티슈</span></a></li>
+                    <li><a href="#"><span>립ㆍ아이 리무버</span></a></li>
+                    <li><a href="#"><span>스크럽ㆍ필링</span></a></li>
+                    <li><a href="#"><span>클렌징 소품</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>헤어</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>샴푸ㆍ린스</span></a></li>
+                    <li><a href="#"><span>트리트먼트ㆍ팩</span></a></li>
+                    <li><a href="#"><span>에센스ㆍ토닉</span></a></li>
+                    <li><a href="#"><span>스타일링</span></a></li>
+                    <li><a href="#"><span>셀프 펌</span></a></li>
+                    <li><a href="#"><span>헤어 소품</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>바디</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>바디 워시</span></a></li>
+                    <li><a href="#"><span>바디 보습</span></a></li>
+                    <li><a href="#"><span>핸드ㆍ풋</span></a></li>
+                    <li><a href="#"><span>바디 소품</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>옴므</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>기초</span></a></li>
+                    <li><a href="#"><span>선케어</span></a></li>
+                    <li><a href="#"><span>메이크업</span></a></li>
+                    <li><a href="#"><span>클렌징ㆍ바디</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"><span>키즈</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>전체</span></a></li>
+                    <li><a href="#"><span>키즈</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#"><span>브랜드관</span></a>
+                <div class="menu-3rd-con">
+                  <ul class="menu-3rd">
+                    <li><a href="#"><span>브랜드관 보러가기</span></a></li>
+                  </ul>
+                  <div class="menu-3rd-ad">
+                    <div>
+                      <a href="#">
+                        <img src="3rd-menu-ad.png" alt="ad-img">
+                      </a>
+                      <p><a href="#">
+                          제품 보러가기 >
+                        </a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </li>
+          <li class="main-logo">
+            <a href="#">
+              <img src="ari-logo 2.svg" alt="aritaum">
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="shearch-icon">
+            <img src="shearch.svg" alt="검색">
+            <div class="shearch-box">
+              <form action="#" method="post">
+                <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요.">
+              </form>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="shopping.svg" alt="장바구니">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="user.svg" alt="회원정보">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="top-banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+
+          <div class="swiper-slide">
+            <div class="list-1">
+              <div class="banner-1st-top"></div>
+              <div class="banner-img">
+                <div class="list-1-deco">
+                  <div class="list-1-deco-txt">
+                    <p class="list-1-deco-txt-1">#오래 지속 #다양한 컬러 #매트</p>
+                    <p class="list-1-deco-txt-2">HERA</p>
+                    <p class="list-1-deco-txt-3">SENSUAL POWDER</p>
+                    <p class="list-1-deco-txt-4">MATTE LIQUID</p>
+                    <p class="list-1-deco-txt-5">센슈얼 파우더 매트 리퀴드</p>
+                  </div>
+                  <div class="list-1-deco-button">
+                    <button class="cross-1st">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-2nd">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-3rd">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-4th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                  </div>
+                </div>
+                <a href="#">
+                  <img src="banner1.png" alt="banner-1">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="list-2">
+              <div class="banner-2nd-top"></div>
+              <div class="banner-img">
+                <div class="list-2-deco">
+                  <div class="list-2-deco-txt">
+                    <p class="list-2-deco-txt-1">옴므</p>
+                    <p class="list-2-deco-txt-2">내가 고른 첫인상,</p>
+                    <p class="list-2-deco-txt-3">깨끗한 피부의 품격</p>
+                    <p class="list-2-deco-txt-4">아이오페 | 프리메라 | 라네즈 | 오딧세이 | 마몽드 </p>
+                  </div>
+                  <div class="list-2-deco-button">
+                    <button class="cross-1st">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-2nd">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-3rd">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-4th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-5th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                  </div>
+                </div>
+                <a href="#">
+                  <img src="banner2.png" alt="banner-1">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="list-3">
+              <div class="banner-3rd-top"></div>
+              <div class="banner-img">
+                <div class="list-3-deco">
+                  <div class="list-3-deco-txt">
+                    <p class="list-3-deco-txt-1">헤라 | 에스쁘아 | 아이오페 | 라네즈 | 마몽드 | 에뛰드</p>
+                    <p class="list-3-deco-txt-2">색조 화장품은</p>
+                    <p class="list-3-deco-txt-3">아리따움</p>
+                    <button class="cross-1st">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                  </div>
+                  <div class="list-3-deco-button">
+                    <button class="cross-2nd">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-3rd">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-4th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-5th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-6th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                    <button class="cross-7th">
+                      <img src="item-cross.svg" alt="+">
+                    </button>
+                  </div>
+                </div>
+                <a href="#">
+                  <img src="banner3.png" alt="banner-1">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="swiper-button-next">
+          <img src="banner-next.svg" alt="next">
+        </div>
+        <div class="swiper-button-prev">
+          <img src="banner-prev.svg" alt="prev">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="btn-list">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="icon-new.svg" alt="신상품">
+          <p>신상품</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-base.svg" alt="스킨케어">
+          <p>스킨케어</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-lip.svg" alt="메이크업">
+          <p>메이크업</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-sun.svg" alt="선블럭">
+          <p>선블럭</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-clean.svg" alt="클렌징">
+          <p>클렌징</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-hair.svg" alt="헤어">
+          <p>헤어</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-body.svg" alt="바디">
+          <p>바디</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="icon-man.svg" alt="옴므">
+          <p>옴므</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+
+  <section class="event-slide">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="event-banner-1.png" alt="event-1">
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="event-banner-2.png" alt="event-2">
+          </a>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+
+  <section class="item-list">
+    <div>
+      <h1>추천 제품</h1>
+      <select name="카테고리" id="카테고리">
+        <option value="스킨케어">스킨케어</option>
+        <option value="메이크업">메이크업</option>
+        <option value="선블럭">선블럭</option>
+        <option value="클렌진">클렌징</option>
+        <option value="헤어">헤어</option>
+        <option value="바디">바디</option>
+        <option value="옴므">옴므</option>
+      </select>
+
+    </div>
+
+    <ul class="item-list-1st">
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-1.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            아이오페
+          </span>
+          <span class="service">
+            사은품
+          </span>
+          <p class="item-name">
+            슈퍼바이탈 래디언트 스틱 8.5g
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+              5%
+            </span>
+            <span class="won-txt">
+              38,000원
+            </span>
+            <span class="sale-won-txt">
+              40,000원
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              52건
+            </span>
+          </p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-2.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            프리메라
+          </span>
+          <span class="service">
+            사은품
+          </span>
+          <p class="item-name-2">
+            오가 베리어 리페어 카밍 에센스 토너 160ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              35,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              39건
+            </span>
+          </p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-3.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            프리메라
+          </span>
+          <span class="service">
+            사은품
+          </span>
+          <p class="item-name-2">
+            오가 베리어 리페어 하이드레이션 크림 에멀젼 160ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              37,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              24건
+            </span>
+          </p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-4.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            에스트라
+          </span>
+          <span class="service">
+            사은품
+          </span>
+          <p class="item-name">
+            에이시카365 세럼 40ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+              15%
+            </span>
+            <span class="won-txt">
+              32,300원
+            </span>
+            <span class="sale-won-txt">
+              38,000원
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              48건
+            </span>
+          </p>
+        </a>
+      </li>
+
+    </ul>
+
+    <ul class="item-list-2nd">
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-5.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            에스트라
+          </span>
+          <span class="service">
+            사은품
+          </span>
+          <p class="item-name">
+            에이시카365 크림 60ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+              15%
+            </span>
+            <span class="won-txt">
+              25,000원
+            </span>
+            <span class="sale-won-txt">
+              30,000원
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              128건
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-6.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            에스트라
+          </span>
+          <p class="item-name">
+            에이시카365 토너 250ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+              15%
+            </span>
+            <span class="won-txt">
+              25,000원
+            </span>
+            <span class="sale-won-txt">
+              30,000원
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              43건
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-7.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            에스트라
+          </span>
+          <p class="item-name-2">
+            라크네365 하이드로 액티브 토너 200ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              30,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              51건
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <p class="like-check">
+              <img src="item_list_heart.svg" alt="like">
+            </p>
+            <p class="shopping-check">
+              <img src="item_list_cart.svg" alt="cart">
+            </p>
+            <img src="cos-8.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            에스트라
+          </span>
+
+          <p class="item-name-2">
+            테라크네365 수딩 액티브 모이스처라이저 60ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              33,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              36건
+            </span>
+          </p>
+        </a>
+      </li>
+    </ul>
+
+    <div class="button">
+      <a href="#">
+        <span>더보기</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="md-list">
+    <h1>추천 브랜드</h1>
+    <div class="md-list-button">
+      <button><span>라네즈</span></button>
+      <button><span>에뛰드</span></button>
+      <button><span>아이오페</span></button>
+    </div>
+    <ul>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <img src="md-cos-1.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            라네즈
+          </span>
+          <p class="item-name-2">
+            [본품+리필] 네오 쿠션_매트 15g*2
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              42,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              1,552건
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <img src="md-cos-2.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            라네즈
+          </span>
+          <span class="service">
+            사은품
+          </span>
+          <p class="item-name-2">
+            워터뱅크 블루 히알루로닉 크림 중건성용 50ml
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+              25%
+            </span>
+            <span class="won-txt">
+              31,500원
+            </span>
+            <span class="sale-won-txt">
+              42,000원
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              309건
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <img src="md-cos-3.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            라네즈
+          </span>
+          <p class="item-name">
+            립 슬리핑 마스크 EX 20g
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              22,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              2,31건
+            </span>
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="list-1-img">
+            <img src="md-cos-4.png" alt="제품">
+          </div>
+          <span class="brand-name">
+            라네즈
+          </span>
+          <p class="item-name-2">
+            [본품+리필] 네오 쿠션_글로우 15g*2
+          </p>
+          <p class="item-sale-won">
+            <span class="sale-txt">
+
+            </span>
+            <span class="won-txt">
+              42,000원
+            </span>
+            <span class="sale-won-txt">
+
+            </span>
+          </p>
+          <p>
+            <span class="review-star">
+              <img src="star-five.svg" alt="리뷰 별">
+            </span>
+            <span class="review-point">
+              (5.0)
+            </span>
+            <span class="review-count">
+              1,328건
+            </span>
+          </p>
+        </a>
+      </li>
+    </ul>
+    <div class="button">
+      <a href="#">
+        <span>브랜드 보러가기</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="brand-banner">
+    <div>
+      <div class="brand-banner-con">
+        <div>
+          <h1>HERA</h1>
+          <p>ROUGE HOLIC</p>
+        </div>
+        <a href="#">
+          <div>
+            <span>자세히 보기</span>
+          </div>
+        </a>
+      </div>
+      <img src="hera-ad.png" alt="브랜드 배너">
+    </div>
+  </section>
+
+
+  <section class="best-list">
+    <div>
+      <h1>인기순위</h1>
+      <img src="clamp.svg" alt=">">
+      <h3> TOP 10</h3>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <div class="best-numbering-1st">
+                <span>01</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="bst-cos-1.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  아이오페
+                </span>
+                <span class="service">
+                  사은품
+                </span>
+                <p class="item-name">
+                  레티놀 엑스퍼트 0.1％ 30ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    15%
+                  </span>
+                  <span class="won-txt">
+                    29,750원
+                  </span>
+                  <span class="sale-won-txt">
+                    35,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    6,717건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>02</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="bst-cos-2.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  에뛰드
+                </span>
+
+                <p class="item-name">
+                  미소 발효 클렌징 오일 150ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    10%
+                  </span>
+                  <span class="won-txt">
+                    14,000원
+                  </span>
+                  <span class="sale-won-txt">
+                    16,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    3,833건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>03</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="bst-cos-3.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  아이오페
+                </span>
+                <span class="service">
+                  사은품
+                </span>
+                <p class="item-name">
+                  레티놀 엑스퍼트 0.1％ 30ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    15%
+                  </span>
+                  <span class="won-txt">
+                    25,000원
+                  </span>
+                  <span class="sale-won-txt">
+                    30,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    3,316건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>04</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="bst-cos-4.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  라네즈
+                </span>
+
+                <p class="item-name-2">
+                  [본품+리필] 네오 쿠션_매트 15g*2
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+
+                  </span>
+                  <span class="won-txt">
+                    42,000원
+                  </span>
+                  <span class="sale-won-txt">
+
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    1,552건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <div class="best-numbering">
+                <span>05</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="cos-8.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  에스트라
+                </span>
+
+                <p class="item-name">
+                  레티놀 엑스퍼트 0.1％ 30ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    15%
+                  </span>
+                  <span class="won-txt">
+                    29,750원
+                  </span>
+                  <span class="sale-won-txt">
+                    35,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    6,717건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>06</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="cos-7.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  에스트라
+                </span>
+
+                <p class="item-name">
+                  미소 발효 클렌징 오일 150ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    10%
+                  </span>
+                  <span class="won-txt">
+                    14,000원
+                  </span>
+                  <span class="sale-won-txt">
+                    16,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    3,833건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>07</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="cos-6.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  에스트라
+                </span>
+                <span class="service">
+                  사은품
+                </span>
+                <p class="item-name">
+                  레티놀 엑스퍼트 0.1％ 30ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    15%
+                  </span>
+                  <span class="won-txt">
+                    25,000원
+                  </span>
+                  <span class="sale-won-txt">
+                    30,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    3,316건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>08</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="cos-5.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  에스트라
+                </span>
+
+                <p class="item-name-2">
+                  에이시카365 크림 60ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+
+                  </span>
+                  <span class="won-txt">
+                    42,000원
+                  </span>
+                  <span class="sale-won-txt">
+
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    1,552건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <div class="best-numbering">
+                <span>09</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="cos-1.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  아이오페
+                </span>
+                <span class="service">
+                  사은품
+                </span>
+                <p class="item-name">
+                  슈퍼바이탈 래디언트 스틱 8.5g
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    15%
+                  </span>
+                  <span class="won-txt">
+                    29,750원
+                  </span>
+                  <span class="sale-won-txt">
+                    35,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    6,717건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="best-numbering">
+                <span>10</span>
+              </div>
+              <a href="#">
+                <div class="list-1-img">
+                  <img src="cos-2.png" alt="제품">
+                </div>
+                <span class="brand-name">
+                  프리메라
+                </span>
+
+                <p class="item-name">
+                  미소 발효 클렌징 오일 150ml
+                </p>
+                <p class="item-sale-won">
+                  <span class="sale-txt">
+                    10%
+                  </span>
+                  <span class="won-txt">
+                    14,000원
+                  </span>
+                  <span class="sale-won-txt">
+                    16,000원
+                  </span>
+                </p>
+                <p>
+                  <span class="review-star">
+                    <img src="star-five.svg" alt="리뷰 별">
+                  </span>
+                  <span class="review-point">
+                    (5.0)
+                  </span>
+                  <span class="review-count">
+                    3,833건
+                  </span>
+                </p>
+              </a>
+              <ul class="best-list-btn">
+                <li>
+                  <a href="#">
+                    <span>장바구니</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>찜하기</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="list-1-img">
+
+              </div>
+            </li>
+            <li>
+              <div class="list-1-img">
+
+              </div>
+            </li>
+          </ul>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <img src="best-arrow-next.svg" alt="next">
+      </div>
+      <div class="swiper-button-prev">
+        <img src="best-arrow-prev.svg" alt="prev">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-deco"></div>
+    <div class="footer-top">
+      <div class="footer-top-con">
+        <span><a href="#">로그인</a></span>
+        <span><a href="#">공지사항</a></span>
+        <span><a href="#">고객센터</a></span>
+        <span><a href="#">매장찾기</a></span>
+        <span><a href="#">사이트 이용약관</a></span>
+        <span><a href="#"> 개인정보 처리지침</a></span>
+        <span><a href="#">위치기반서비스 이용약관</a></span>
+        <span><a href="#"> 가맹점 개설문의</a></span>
+      </div>
+    </div>
+    <div class="footer-center">
+      <p class="footer-center-title">
+        고객센터 이용안내
+      </p>
+      <p class="footer-center-call-1st">
+        아리따움 온라인몰 고객센터 080-555-6006
+      </p>
+      <p class="footer-center-call-2nd">
+        아리따움 제품 & 매장 고객센터 080-023-5454
+      </p>
+      <p class="footer-center-time-1st">
+        운영시간 : 09:00 - 18:00 (토요일 및 공휴일 휴무)
+      </p>
+      <p class="footer-center-time-2nd">
+        점심시간 : 12:00 - 13:00
+      </p>
+    </div>
+    <ul class="footer-bottom">
+      <li class="footer-bottom-right">
+        <p class="footer-bottom-title">
+          (주)아모레퍼시픽
+        </p>
+        <p>(주)아모레퍼시픽 대표이사 : 이동순 | 사업자등록번호 : 106-86-43373</p>
+        <p>주소 : 서울특별시 용산구 한강대로 100 (한강로 2가)
+        </p>
+        <p>전자메일주소 : support@aritaum.com</p>
+        <p>호스팅 제공자 : (주)아모레퍼시픽</p>
+        <p>
+          통신판매업신고번호 : 2017-서울용산-1308호</p>
+        <p class="footer-bottom-margin">건강기능식품판매업 영업신고증 제 8호</p>
+        <p>
+          고객님의 안전거래를 위해 현금 거래에 대해 이니페이 에스크로서비스를 이용하실 수 있습니다. <a href="#">
+            이니시스 구매안전서비스 확인하기>
+          </a></p>
+        <p class="footer-bottom-margin">아리따움의 모든 고객은 연 200만원(최종 결제 금액 기준) 구매 한도 내에서 할인 혜택을 받으실 수 있습니다. 구매한도 초과시 정가로 구매
+          가능합니다. (온/오프라인 각각 200만원 한도 적용)
+
+        </p>
+        <p>
+          AMOREPACIFIC CORPORATION. ALL RIGHTS RESERVED.</p>
+      </li>
+      <li class="footer-bottom-icon">
+        <div>
+          <a href="#">
+            <img src="facebook-icon.svg" alt="facebook">
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="insta-icon.svg" alt="instagram">
+          </a>
+        </div>
+        <div><a href="#">
+            <img src="youtube-icon.svg" alt="youtube">
+          </a></div>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
